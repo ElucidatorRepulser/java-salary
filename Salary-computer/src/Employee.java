@@ -3,9 +3,9 @@ public class Employee {
 
     private String firstName, surname, address, postion, office;
     private int age, monthlyRate, sss, pagibig, id;
-    private double grossSalary, netSalary,dailyRate;
+    private double grossSalary, netSalary,dailyRate, deductionRate;
 
-    public Employee(String firstName, String surname, String address, String position, String office, int age, int monthlyRate, int sss, int pagibig, int id, double dailyRate) {
+    public Employee(String firstName, String surname, String address, String position, String office, int age, int monthlyRate, int sss, int pagibig, int id, double dailyRate, double deductionRate) {
         this.firstName = firstName;
         this.surname = surname;
         this.age = age;
@@ -16,7 +16,8 @@ public class Employee {
         this.sss = sss;
         this.pagibig = pagibig;
         this.id = id;
-        this.dailyRate = dailyRate;        
+        this.dailyRate = dailyRate;   
+        this.deductionRate = deductionRate;
     }
 
     public String getFirstname() {
@@ -60,6 +61,11 @@ public class Employee {
     public double getSSS(){
         return sss;
     }
+    
+    public double getDeductionRate(){
+        return deductionRate;
+    } 
+    
 
     public double getGrossSalary(int numberOfDaysWorked) {
 
@@ -70,7 +76,7 @@ public class Employee {
     }
 
     public double getNetSalary(int numberOfMinutesLate) {
-        this.netSalary = grossSalary - (sss + pagibig) - (numberOfMinutesLate * dailyRate);
+        this.netSalary = grossSalary - (sss + pagibig) - (numberOfMinutesLate * deductionRate);
         return netSalary;
     }
 }

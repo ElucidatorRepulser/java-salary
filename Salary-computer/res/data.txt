@@ -1,3 +1,3 @@
-First Name,Surname,Address,Position,Office,Age,Monthly Rate,SSS,Pagibig,Id,Daily Rate
-Juan,Dela Cruz,Brgy Salac Lumban Laguna,HR Manager,Human Resources,27,19992,200,100,112356,833
-Maria,Makiling,Brgy Bonifacio Lumban Laguna,IT Specialist,IT Office,21,16992,200,100,100134,708
+First Name,Surname,Address,Position,Office,Age,Monthly Rate,SSS,Pagibig,Id,Daily Rate,Deduction Rate
+Juan,Dela Cruz,Brgy Salac Lumban Laguna,HR Manager,Human Resources,27,19992,200,100,112356,833,2
+Maria,Makiling,Brgy Bonifacio Lumban Laguna,IT Specialist,IT Office,21,16992,200,100,100134,708,1.5

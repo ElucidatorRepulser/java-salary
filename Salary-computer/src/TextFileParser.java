@@ -31,7 +31,8 @@ public class TextFileParser {
                         Integer.valueOf(line[7]),
                         Integer.valueOf(line[8]),
                         Integer.valueOf(line[9]),
-                        Integer.valueOf(line[10])
+                        Integer.valueOf(line[10]),
+                        Double.valueOf(line[11])
                 ));
             }
         } catch (FileNotFoundException e) {
